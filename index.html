@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title>Spotifi</title>
+    <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+    <div class='title'>
+        <h1>Spotifi</h1>
+        <h2>Quem está ouvindo?</h2>
+    </div>
+    <div class='contas'>
+        <div class='user'>
+            <button class='user-btn' onclick="password1()"><img src="imagens/WhatsApp Image 2026-07-15 at 12.23.47.jpeg" alt=""></button>
+            <label>Os zomi bom</label>
+        </div>
+        <div class='user'>
+            <button class='user-btn' onclick="password2()"><img src="imagens/WhatsApp Image 2026-06-07 at 05.49.34.jpeg" alt=""></button>
+            <label>Sofia pernetas</label>
+        </div>
+        <div class='user'>
+            <button class='user-btn' onclick="password3()"><img src="imagens/WhatsApp Image 2026-07-15 at 12.26.36.jpeg" alt=""></button>
+            <label>Ana Laysa</label>
+        </div>
+    </div>
+    <div class='password' id='div_oculta'>
+        <div class='password-box'>
+            <h3 id="teste">Qual a senha da sua conta?</h3>
+            <input type="password" id="password" placeholder="Digite sua senha...">
+            <input class="btn" type="button" value="Entrar" onclick="verificarSenha()">
+        </div>
+    </div>
+    <script src='script.js'></script>
+</body>
+</html>

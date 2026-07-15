@@ -1,0 +1,164 @@
+/* Animação */
+    @keyframes pulsar {
+        0% {
+            text-shadow: 
+                0 0 5px #cdfbc7,
+                0 0 8px #cdfbc7,
+                0 0 10px #6cfb84,
+                0 0 20px #6cfb84,
+                0 0 30px #6cfb84;
+        }
+        100% {
+            text-shadow: 
+                0 0 8px #cdfbc7,
+                0 0 10px #cdfbc7,
+                0 0 20px #6cfb84,
+                0 0 50px #6cfb84,
+                0 0 160px #6cfb84;
+        }
+    }
+
+/*Fontes*/
+@font-face {
+    font-family: myriad;
+    src: url(Fontes/Myriad\ Pro\ Bold\ SemiExtended.ttf);
+}
+
+@font-face {
+    font-family: boldfont;
+    src: url(Fontes/THEBOLDFONT-FREEVERSION.ttf);
+}
+
+@font-face {
+    font-family: bebas;
+    src: url(Fontes/BebasNeue-Regular.ttf);
+}
+
+/* Geral */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #030f05;
+}
+
+/* Imagens */
+img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Titulo */
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 200px;
+    margin-bottom: 20px;
+    background-color: #030904;
+}
+
+h1 {
+    font-family: boldfont;
+    font-size: 80px;
+    letter-spacing: 6px;
+    margin: 10px;
+    color: #28e56a;
+    animation: pulsar 1.5s infinite alternate;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(248, 253, 249);
+}
+
+h2 {
+    font-family: bebas;
+    font-size: 30px;
+    letter-spacing: 4px;
+    color:aliceblue
+}
+
+h3 {
+    font-family: myriad;
+    font-size: 30px;
+    color: #f5f5f5;
+    margin: 10px;
+}
+
+label {
+    font-family: myriad;
+    font-size: 30px;
+    color: #f5f5f5;
+    margin-bottom: 10px;
+}
+
+/* Estrutura */
+.contas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 200px;
+}
+
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.user-btn {
+    background-color: transparent;
+    border: 4px solid #000000;
+    cursor: pointer;
+    transition: filter 0.2s ease;
+    border-radius: 50%;
+}
+
+.user-btn:active {
+    filter: brightness(70%);
+}
+
+.password {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+}
+
+.password-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #030904;
+    border-radius: 20px;
+    width: 500px;
+    height: 200px;
+    gap: 10px;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.btn:active {
+    filter: brightness(70%);
+}
+
+input {
+    background-color: #040e06;
+    color: #ffffff;
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    font-size: 20px;
+}
